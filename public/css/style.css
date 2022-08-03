@@ -1,0 +1,23 @@
+.mainSec{
+    display: flex;
+    height: 100vh;
+    display: flex;
+}
+
+
+.leftMenu{
+    height: 100vh;
+    width: 23%;
+    border-right: 1px solid rgba(196, 194, 194, 0.693);
+}
+
+.rightNav{
+    height: 100vh;
+    width: 33%;
+    border-left: 1px solid rgba(196, 194, 194, 0.693);
+}
+
+.hero{
+    height: 100vh;
+    width: 44%;
+}
