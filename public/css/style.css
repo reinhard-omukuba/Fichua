@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .mainSec{
     display: flex;
     height: 100vh;
@@ -5,19 +10,322 @@
 }
 
 
+/* left menu */
 .leftMenu{
     height: 100vh;
     width: 23%;
     border-right: 1px solid rgba(196, 194, 194, 0.693);
+    padding-left: 3%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.menuItem{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: rgb(41, 40, 40);
+    text-decoration: none;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    border-radius: 30px;
+}
+
+.activeMenu{
+    color: black;
+    font-weight: bolder;
+}
+
+.menuItem:hover{
+    background-color: bisque;
+}
+
+.menuItem p{
+    margin: 0;
+    font-size: 20px;
+    
+    margin-left: 20px;
+}
+
+.postBtn{
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* HERO SECTION */
+
+.topPostSec{
+    border-bottom: 1px solid rgba(196, 194, 194, 0.693) ;
+}
+
+.topMenuPost{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.topMenuPost h5{
+    font-weight: bold;
+}
+
+.postCont{
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.userProfile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.userProfile1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.postCont textarea{
+    width: 85%;
+    margin-left: 2%;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+
+}
+
+
+.postCont textarea:focus{
+    outline: none;
+}
+
+.postBtnCont{
+    padding-left: 12%;
+    padding-top: 2vh;
+    display: flex;
+    padding-bottom: 3vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+
+.uploadVideoIcon{
+    color: royalblue;
+    font-size: 18px;
+    width: fit-content;
+    
+}
+
+
+.thelabel{
+    cursor: pointer;
+}
+
+.postBtnCont button{
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* RIGHT NAV */
 
 .rightNav{
     height: 100vh;
     width: 33%;
     border-left: 1px solid rgba(196, 194, 194, 0.693);
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3vh;
 }
+.searchCont{
+    position: relative;
+}
+
+.searchCont input{
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+}
+
+
+.searchIcon{
+    position: absolute;
+    top: 25%;
+    left: 4%;
+}
+.myTrends{
+    background-color: rgb(241, 241, 241);
+    height: 83vh;
+    margin-top: 3vh;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+
+.myTrends h5{
+    font-weight: bold;
+}
+
+#alertProgress{
+    margin-left: 2%;
+    margin-right: 2%;
+    display: none;
+}
+
+#progressSuccess{
+    margin-left: 2%;
+    margin-right: 2%;
+    display: none;
+}
+
+#progressError{
+    margin-left: 2%;
+    margin-right: 2%;  
+    display: none;
+}
+
+#progressError2{
+    margin-left: 2%;
+    margin-right: 2%;  
+    display: none;
+}
+
+/* AL POSTS */
 
 .hero{
     height: 100vh;
     width: 44%;
+    overflow-y: scroll;
+}
+
+#showAllPosts{
+    margin-left: 2%;
+    margin-right: 2%; 
+
+}
+
+.pullPostsCont p{
+    padding: 0;
+    margin: 0;
+}
+
+.pullPostsCont h6{
+    padding: 0;
+    margin: 0; 
+    margin-right: 10px; 
+}
+
+.pullPostsCont{
+    width: 80%;
+    margin-left: 2%;
+}
+
+.theVideo{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.videoCaption{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.postMap{
+    border-bottom: 1px solid rgb(216, 214, 214);
+    padding-bottom: 3vh;
+    margin-top: 2vh;
+}
+
+.postStats{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.statItem{
+    cursor: pointer;
+
+}
+
+
+
+/* LOGIN SEC */
+
+.loginSec{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/bg2.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.opacity{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-color: black;
+}
+
+
+.loginCont{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.theCard{
+    width: 40%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 6vh;
+    padding-top: 6vh;
+}
+
+.theCard a{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#submitting{
+    display: none;
+}
+
+
+.userProfile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.userProfile1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }

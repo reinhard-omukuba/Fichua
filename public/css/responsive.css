@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+
+    .leftMenu{
+        display: none;
+    }
+
+    .rightNav{
+        display: none;
+    }
+
+    .hero{
+        width: 100%;
+    }
+
+    .theCard{
+        width: 80%;
+        padding-bottom: 4vh;
+        padding-top: 4vh;
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+    
+}
+

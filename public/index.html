@@ -7,6 +7,8 @@
     <title>Mzalendo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/dd02cccd29.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -15,19 +17,125 @@
     <section class="mainSec">
         <div class="leftMenu">
 
+            <a href="" class="menuItem activeMenu">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <p>Home</p>
+            </a>
+
+            <a href="" class="menuItem">
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <p>Live Streams</p>
+            </a>
+
+            <a href="" class="menuItem">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <p>Notifications</p>
+            </a>
+
+            <a href="" class="menuItem">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <p>Messages</p>
+            </a>
+
+            <a href="" class="menuItem">
+                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                <p>Bookmarks</p>
+            </a>
+
+            <a href="" class="menuItem">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <p>Profile</p>
+            </a>
+
+            <button class="btn btn-primary postBtn">Post</button>
+
+
+
         </div>
 
         <div class="hero">
-            
+            <!-- start top sec -->
+            <div class="topPostSec">
+                <div class="topMenuPost">
+                    <h5>Home</h5>
+                    <a><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="postCont">
+                    <div class="userProfile1">
+                        <img src="Images/thrav.png" alt="">
+                    </div>
+                    <textarea name="" id="caption"  placeholder="What's happening?"  rows="1"></textarea>
+                </div>
+
+                <div class="postBtnCont">
+
+                    <div class="uploadVideoIcon" >
+                        <label for="myVideo" class="thelabel"><i class="fa fa-file-video-o" aria-hidden="true"></i></label>
+                        <input id="myVideo" type="file" class="hidden" style="display:none;">
+                    </div>
+
+                    <button class="btn btn-primary" id="postItem">Post</button>
+
+                </div>
+
+                <div class="alert alert-primary" id="alertProgress" role="alert">
+                    <p id="progressText">Video is upoading...</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" id="progressbar" aria-label="Default striped example" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                </div>
+
+                <div class="alert alert-success" id="progressSuccess" role="alert">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    Video Uploaded Successfully!
+                </div>
+
+                <div class="alert alert-danger" id="progressError" role="alert">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    There was an error uploading your video.
+                </div>
+
+                <div class="alert alert-danger" id="progressError2" role="alert">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    There was an error uploading your video.
+                </div>
+
+            </div>
+            <!-- End top sec -->
+            <div id="showAllPosts">
+
+                
+
+
+            </div>
 
         </div>
 
         <div class="rightNav">
+
+            <div class="searchCont">
+                <input type="text" class="form-control" placeholder="Search Mzalendo">
+                <span class="searchIcon"><i class="fa fa-search" aria-hidden="true"></i></span>
+            </div>
+
+            <div class="myTrends">
+                <h5>Top Live streams</h5>
+
+            </div>
 
         </div>
 
     </section>
     
 
+      <!-- ======= JS ======= -->
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+      <script src="js/config.js"></script>
+      <script src="js/home.js"></script>
 </body>
 </html>
