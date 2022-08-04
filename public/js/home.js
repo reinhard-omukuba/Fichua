@@ -110,7 +110,7 @@ firebase.firestore().collection("users").get().then((userSnapshot)=>{
                 var videoUrl = doc.data().videoUrl;
                 var caption = doc.data().caption;
                 var upoadTime = doc.data().upoadTime;
-                var userId = doc.data().userId;
+                var mtuserId = doc.data().userId;
 
                 //splitting time
                 var DateAdded = upoadTime.toDate().toDateString();
@@ -146,7 +146,7 @@ firebase.firestore().collection("users").get().then((userSnapshot)=>{
               var timedifference = timeSince(new Date( fullDate)) + " ago"
 
 
-                if(userId == userId){
+                if(userId == mtuserId){
                     content += '<div class="d-flex postMap" >';
                     content += '<div class="userProfile">';
                     content += '<img src="'+userPhoto+'">';
@@ -157,16 +157,16 @@ firebase.firestore().collection("users").get().then((userSnapshot)=>{
                     content += '            <p style="color: gray; font-size: 13px;">'+timedifference+'</p>';
                     content += '        </div>';
                     content += '        <div>';
-                    content += '            <p id="videoCaption">'+caption+'</p>';
+                    content += '            <p id="videoCaption" style="color:gray;">'+caption+'</p>';
                     content += '            <video class="theVideo" controls>';
                     content += '                <source src="'+videoUrl+'">';
                     content += '            </video>';
                     content += '        </div>';
                     content += '        <div class="postStats">';
-                    content += '            <p class="statItem">';
+                    content += '            <p class="statItem" style="font-size:14px;">';
                     content += '                <i class="fa fa-commenting-o" aria-hidden="true"></i> 0 Comments ';
                     content += '            </p>';
-                    content += '            <p class="statItem">';
+                    content += '            <p class="statItem" style="font-size:14px;">';
                     content += '                <i class="fa fa-heart-o" aria-hidden="true"></i> 0 Likes';
                     content += '            </p>';
                     content += '        </div>   ';                

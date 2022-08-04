@@ -329,3 +329,46 @@
     width: 100%;
     object-fit: cover;
 }
+
+
+/*LIVE STREAMS  */
+
+.liveStreamProfile{
+    display: flex;
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+.liveP1{
+    height: 50px;
+    width: 50px;
+    background-color: royalblue;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px red solid;
+    
+}
+
+.liveAcc1{
+    height: 200px;
+    width: 45%;
+    background-color: peru;
+    border-radius: 7px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.liveBanner{
+    background-color: tomato;
+    font-size: 12px;
+    padding:3px 10px;
+    width: fit-content;
+    border-radius: 15px;
+    color: white;
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    
+}
